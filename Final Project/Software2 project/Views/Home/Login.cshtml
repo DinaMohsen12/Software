@@ -6,7 +6,9 @@
 
 @using (Html.BeginForm("LoginConfirmmed", "Home"))
 {
-    <h2 style="text-align:center; font-weight:bold; border-bottom:1.5px solid; width:20%; margin-right:auto; margin-left:auto; margin-bottom:12px;">Login</h2>
+    <h2 style="text-align:center; font-weight:bold; width:20%; margin-right:auto; margin-left:auto; margin-bottom:12px;">
+        <span style="border-bottom:1.5px solid;">Login</span>
+    </h2>
 
     <div class="form-group" style="font-weight:bold">
         @Html.LabelFor(m => m.username)

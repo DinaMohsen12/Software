@@ -34,5 +34,11 @@ namespace Software2_project.Controllers
 
             return RedirectToAction("Login", "Home");
         }
+
+        public ActionResult Logout()
+        {
+            Session.RemoveAll();
+            return RedirectToAction("Login", "Home");
+        }
     }
 }

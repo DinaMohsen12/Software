@@ -30,6 +30,12 @@
                         <li>@Html.ActionLink("Login", "Login", "Home")</li>
                     </ul>
                 }
+                @if (Session["username"] != null)
+                {
+                    <ul class="nav navbar-nav" style="float:right">
+                        <li>@Html.ActionLink("Logout", "Logout", "Admin")</li>
+                    </ul>
+                }
             </div>
         </div>
     </div>
